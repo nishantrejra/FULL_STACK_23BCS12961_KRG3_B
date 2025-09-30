@@ -1,0 +1,86 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Banking Container */
+  .bank-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Balance Display */
+  .balance {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2e7d32;
+  }
+  
+  /* Input field */
+  input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .deposit-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  .deposit-btn:hover {
+    background-color: #388e3c;
+  }
+  
+  .withdraw-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  .withdraw-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .bank-container {
+      width: 90%;
+    }
+    button {
+      width: 100%;
+      margin: 5px 0;
+    }
+    input {
+      width: 100%;
+    }
+  }
+  

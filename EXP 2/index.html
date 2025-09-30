@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Product Store</h2>
+
+    <!-- Filter Dropdown -->
+    <label for="filter">Filter by Category:</label>
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+      <option value="books">Books</option>
+    </select>
+
+    <!-- Feedback -->
+    <p id="feedback"></p>
+
+    <!-- Product List -->
+    <div id="product-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
