@@ -1,0 +1,59 @@
+
+
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    return `Hi, I'm ${this.name} and I'm ${this.age} years old.`;
+  }
+}
+
+
+class Student extends Person {
+  constructor(name, age, grade) {
+    super(name, age);
+    this.grade = grade;
+  }
+
+  greet() {
+    return `${super.greet()} I'm a student in grade ${this.grade}.`;
+  }
+
+  study() {
+    return `${this.name} is studying.`;
+  }
+}
+
+// Subclass Teacher
+class Teacher extends Person {
+  constructor(name, age, subject) {
+    super(name, age);
+    this.subject = subject;
+  }
+
+  greet() {
+    return `${super.greet()} I teach ${this.subject}.`;
+  }
+
+  teach() {
+    return `${this.name} is teaching ${this.subject}.`;
+  }
+}
+
+// Demonstration
+const person = new Person('Ayush', 30);
+const student = new Student('Arman', 20, '12th');
+const teacher = new Teacher('Mr. Alok', 45, 'Mathematics');
+
+console.log(person.greet());
+console.log(student.greet());
+console.log(student.study());
+console.log(teacher.greet());
+console.log(teacher.teach());
+
+// Using instanceof operator
+console.log(student instanceof Person);   // true
+console.log(teacher instanceof Student);  // false
